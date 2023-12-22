@@ -9,6 +9,7 @@ import CreateTask from "../Pages/Dashboard/CreateTask/CreateTask";
 import YourTeam from "../Pages/YourTeam/YourTeam";
 import Project from "../Pages/Project/Project";
 import PrivateRoute from "./PrivateRoutes";
+import Benefits from "../Pages/Home/Benefits/Benefits";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path:"/project",
                 element:<PrivateRoute><Project></Project></PrivateRoute>
+            },
+            {
+                path:"/benefits",
+                element:<Benefits></Benefits>
             }
         ]
     },
