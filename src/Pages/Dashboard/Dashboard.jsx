@@ -185,7 +185,7 @@ const Dashboard = () => {
       </form>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
         <div onDragOver={(e)=>dragingOver(e)} onDrop={(e)=>dragDroppedTodo(e,'to-do')} className="bg-green-200 p-3 rounded-md">
-          <h1 className="text-2xl font-semibold mb-2">TO-DO</h1>
+          <h1 className="text-2xl font-semibold mb-2">TO-DO List</h1>
           {to_do?.map((task) => (
             <div key={task?._id}
               draggable
@@ -202,7 +202,7 @@ const Dashboard = () => {
           ))}
         </div>
         <div onDragOver={(e)=>dragingOver(e)} onDrop={(e)=>dragDroppedOngoing(e,'ongoing')} className="bg-green-200  p-3 rounded-md">
-          <h1 className="text-2xl font-semibold uppercase">ongoing</h1>
+          <h1 className="text-2xl font-semibold uppercase">Ongoing List</h1>
           {ongoing?.map((task) => (
             <div key={task?._id}
               draggable
@@ -219,7 +219,7 @@ const Dashboard = () => {
           ))}
         </div>
         <div onDragOver={(e)=>dragingOver(e)} onDrop={(e)=>dragDroppedCompleted(e,'completed')} className="bg-green-200 p-3 rounded-md">
-          <h1 className="text-2xl font-semibold uppercase">Completed</h1>
+          <h1 className="text-2xl font-semibold uppercase">Completed List</h1>
           {completed?.map((task) => (
             <div key={task?._id}
               draggable

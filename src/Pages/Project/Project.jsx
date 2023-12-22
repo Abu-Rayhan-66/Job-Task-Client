@@ -30,10 +30,10 @@ const Project = () => {
         <div className="card card-compact  bg-base-100 shadow-xl">
             <figure><img src="https://i.ibb.co/417dNCf/istockphoto-1359207185-612x612.jpg" alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">Online Show shop frontend development</h2>
+                <h2 className="card-title">Online Shoe shop frontend development</h2>
                 
                 <div className="card-actions ">
-                    <button className="btn btn-primary">send team message</button>
+                    <button className="btn btn-primary"></button>
                 </div>
 
             </div>
